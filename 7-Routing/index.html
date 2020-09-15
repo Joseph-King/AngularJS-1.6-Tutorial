@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="firstAngularApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular</title>
+</head>
+<body ng-controller="mainCtrl as vm">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="posts-list/posts-list.component.js"></script>
+
+    <nav>
+        <div>
+            <div>
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#">FruitPosts</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="posts">Posts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ui-view></ui-view>
+
+    <!--<posts-list></posts-list>-->
+</body>
+</html>

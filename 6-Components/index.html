@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="firstAngularApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular</title>
+</head>
+<body ng-controller="mainCtrl as vm">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="posts-list/posts-list.component.js"></script>
+
+    <h3>List of Fruits</h3>
+    <p>Search by value:</p>
+    <input type="text" ng-model="vm.search">
+    
+    <posts-list></posts-list>
+</body>
+</html>
