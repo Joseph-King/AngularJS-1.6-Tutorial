@@ -15,3 +15,4 @@
 
  If you check that out you will almost immediately see (just from the directory structure) that Angular and AngularJS are practically two different things.
  Hopefully you do not make the same mistake I have.
+ 
